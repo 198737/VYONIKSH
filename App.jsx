@@ -146,9 +146,7 @@ function App() {
       setBackendConnected(true);
     } catch (err) {
       setBackendConnected(false);
-      setError(
-        "Python ML backend is not connected. Run: python backend/app.py"
-      );
+      setError(null);
     } finally {
       setLoading(false);
     }
